@@ -20,14 +20,14 @@
         </span>
       </router-link>
     </div>
-    <div class="content">
-      <slot/>
+    <div class="content ">
+      <slot />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+import StreamBlock from "@/components/StreamBlock/StreamBlock.vue";
 
 const props = defineProps({
   title:{
@@ -54,7 +54,10 @@ const props = defineProps({
 
 <style scoped lang="scss">
 
+
+
 @use '../../styles/global' as v;
+
 
 .block{
   width: 100%;
@@ -66,12 +69,13 @@ const props = defineProps({
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   .block__title-block__title{
     @extend .header2;
     color: v.$font-color-black;
     opacity: 0.75;
+
   }
 
   .block__title-block__link{
@@ -88,6 +92,19 @@ const props = defineProps({
     }
 
   }
+}
+
+.content{
+  padding:0 10px  0 10px;
+  margin: 0 -10px  0 -10px;
+  width: 100%;
+  height: 210px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,274px);
+  gap: 10px;
+  justify-content: space-between;
+
 }
 
 

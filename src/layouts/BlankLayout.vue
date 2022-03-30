@@ -48,6 +48,9 @@ const isAuth = userStore.isAuth;
 .side-bar {
   height: 100%;
 }
+.el-header{
+  padding: 0 40px !important;
+}
 
 .menu {
   background-color: v.$white;
