@@ -4,17 +4,17 @@
       <search-input/>
     </div>
     <div class="header-bar__right">
-
+      <header-bar-right/>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import SearchInput from "@/components/SearchInput/SearchInput.vue";
+import HeaderBarRight from "@/components/HeaderBar/HeaderBarRight.vue";
 
-export default {
-  components: {SearchInput}
-}
+
+
 </script>
 
 <style scoped lang="scss">
@@ -34,6 +34,9 @@ export default {
 
   .header-bar__right{
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 

@@ -57,6 +57,7 @@ const isAuth = userStore.isAuth;
   background-color: v.$background-color-white-grey;
   -moz-border-radius-topleft: 16px;
   border-top-left-radius: 16px;
+  padding: 40px !important;
 
 }
 </style>

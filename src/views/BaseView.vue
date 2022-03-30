@@ -1,31 +1,34 @@
 <template>
   <div>
-    <h2>content</h2>
+    <h2>Главная</h2>
+    <block title="Рекомендация стримов" link="/popular">
+      hnsakjdhksjahdkj
+    </block>
+
+    <block title="Рекомендация стримов" >
+      hnsakjdhksjahdkj
+    </block>
+
+    <block title="Рекомендация стримов" link="/popular">
+      hnsakjdhksjahdkj
+    </block>
   </div>
 </template>
 
 
 <script setup lang="ts">
 import "@/styles/global.scss";
-
-
+import Block from "@/components/Block/Block.vue";
 
 </script>
 
 
-<style lang="scss" >
+<style lang="scss" scoped>
 
-.el-space__item{
-  border-radius: 16px;
-  background: url("https://i.postimg.cc/7hfsKbVp/Joker-7.jpg")no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 14px;
-  aspect-ratio: 16 / 9;
-  width: 18%;
-  margin-bottom: 28px;
+@use '../styles/global' as v;
+
+h2{
+  @extend .header1;
 }
 
 </style>
